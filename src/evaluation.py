@@ -1,3 +1,23 @@
+def evaluate_test_sample(hmm, audio_path):
+
+  # Clustered observation sequence from real audio
+  obs_sequence = hmm.process_audio(audio_path)
+
+  # Run Forward Algorithm
+  forward_probs = hmm.forward(obs_sequence)
+  print("Forward probabilities:")
+  print(forward_probs)
+
+  # Run Viterbi Algorithm
+  viterbi_path, viterbi_prob = hmm.viterbi(obs_sequence)
+  print("\nViterbi path:")
+  print(viterbi_path)
+  print("\nViterbi probability:")
+  print(viterbi_prob)
+
+  return viterbi_path, viterbi_prob, forward_probs
+
+
 def evaluate_model(hmm, test_files, keywords):
   correct = 0 # number of correct predictions
   total = 0 # total number of test samples
@@ -25,6 +45,7 @@ def evaluate_model(hmm, test_files, keywords):
       except Exception as e:
         print(f"Error processing {file_path}: {e}")
 
-  # Calculate accuracy
-  accuracy = correct / total if total > 0 else 0
-  print(f"\nModel accuracy on test set: {accuracy * 100:.2f}% ({correct}/{total})")
+    # Calculate accuracy
+    accuracy = correct / total if total > 0 else 0
+    print(f"\nModel accuracy on test set: {accuracy * 100:.2f}% ({correct}/{total})")
+    return accuracy
