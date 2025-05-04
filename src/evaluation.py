@@ -48,4 +48,4 @@ def evaluate_model(hmm, test_files, keywords):
     # Calculate accuracy
     accuracy = correct / total if total > 0 else 0
     print(f"\nModel accuracy on test set: {accuracy * 100:.2f}% ({correct}/{total})")
-    return accuracy
+  
