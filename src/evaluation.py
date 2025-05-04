@@ -45,7 +45,7 @@ def evaluate_model(hmm, test_files, keywords):
       except Exception as e:
         print(f"Error processing {file_path}: {e}")
 
-    # Calculate accuracy
-    accuracy = correct / total if total > 0 else 0
-    print(f"\nModel accuracy on test set: {accuracy * 100:.2f}% ({correct}/{total})")
+  # Calculate accuracy
+  accuracy = correct / total if total > 0 else 0
+  print(f"\nModel accuracy on test set: {accuracy * 100:.2f}% ({correct}/{total})")
   
