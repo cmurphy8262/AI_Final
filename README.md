@@ -18,7 +18,7 @@ This project implements a simple Automatic Speech Recognition (known as an ASR) 
 ## Setup
 1. Clone the Repository
   - git clone https://github.com/cmurphy8262/AI_Final.git
-  - cd hmm-speech-recognition
+  - cd AI_Final
 2. Install Dependencies
   - pip install -r requirements.txt
 3. Run the Project
