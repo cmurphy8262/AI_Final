@@ -2,7 +2,7 @@
 By Dominic Cork and Connor Murphy
 
 ## Overview
-This project implements a simple Automatic Speech Recognition (known as an ASR) system using Hidden Markov Models (HMMs). The system is trained and tested using the Google Speech Commands dataset, and it has the ability to recognize spoken keywords based on extracted audio features.
+This project implements a simple Automatic Speech Recognition (ASR) system using Hidden Markov Models (HMMs). The system is trained and tested using the Google Speech Commands dataset, and it can recognize spoken keywords based on extracted audio features.
 
 
 ## Setup
