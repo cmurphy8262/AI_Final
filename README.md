@@ -27,7 +27,7 @@ This project implements a simple Automatic Speech Recognition (known as an ASR) 
 - Supports configurable keyword selection and dataset sizes
 
 
-## Files
+## File Descriptions
 - main.py: Entry point for the project. Trains the HMM, evaluates one sample, and prints model accuracy.
 - HMM.py: Defines the HMM class, which includes the forward and Viterbi algorithms, as well as audio processing.
 - training.py: Contains the fit_hmm() function, which is used to estimate the transition, emission, and initial probabilities of the training data.
